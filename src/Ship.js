@@ -2,9 +2,13 @@ function Ship() {
   this.name = 'Ship';
 }
 
-function setSail() {
-  this.startingPort = 'Dover';
-}
 
+Ship.prototype.setSail = function setSail() {
+  if ((this.startingPort) === 'Dover') {
+    this.startingPort = (null) || (NaN) || (undefined) || (0) || (false) || ('');
+  } else {
+    this.startingPort = 'Dover';
+  }
+};
 
 module.exports = Ship;

@@ -8,7 +8,8 @@ describe('Ship', () => {
 
   describe('setSail', () => {
     it('can set sail', () => {
-      const ship = new Ship('Dover');
+      const ship = new Ship('Boatie Mcboatface');
+      ship.startingPort = ('Dover');
       ship.setSail();
       expect(ship.startingPort).toBeFalsy();
     });
