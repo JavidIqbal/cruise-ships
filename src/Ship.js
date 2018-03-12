@@ -1,5 +1,10 @@
 function Ship() {
-  this.ship = 'Dover';
+  this.name = 'Ship';
 }
+
+function setSail() {
+  this.startingPort = 'Dover';
+}
+
 
 module.exports = Ship;
