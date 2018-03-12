@@ -1,18 +1,17 @@
 /* globals describe it expect */
 const Ship = require('../src/Ship.js');
 
-// const ship = new Ship('Dover');
-
 describe('Ship', () => {
-  describe('Ship', () => {
-    it('can be instantiated', () => {
-      expect(new Ship()).toBeInstanceOf(Object);
-    });
+  it('can be instantiated', () => {
+    expect(new Ship()).toBeInstanceOf(Object);
+  });
 
-  // describe('name', () => {
-  // it('sets the name property', () => {
-  // expect(ship.name).toEqual('Dover');
-  // });
-  // });
+  describe('setSail', () => {
+    it('can set sail', () => {
+      const ship = new Ship('Dover');
+      ship.setSail();
+      expect(ship.startingPort).toBeFalsy();
+    });
   });
 });
+

@@ -1,5 +1,5 @@
 function Ship() {
-  this.name = 'Dover';
+  this.ship = 'Dover';
 }
 
 module.exports = Ship;
